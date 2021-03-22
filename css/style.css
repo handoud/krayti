@@ -328,9 +328,8 @@ p {
 
 .back-to-top {
     position: fixed;
-    display: none;
     background: var(--main);
-    color: #fff;
+    color: var(--sugar);
     width: 44px;
     height: 44px;
     text-align: center;
@@ -411,7 +410,18 @@ p {
         pointer-events: all;
     }
     /*End navbar*/
+    /*back to top button*/
     .back-to-top {
+        width: 30px;
+        height: 30px;
         bottom: 15px;
+        text-align: center;
+        line-height: 1;
+        font-size: 12px;
     }
+    .back-to-top i {
+        padding-top: 10px;
+        color: #fff;
+    }
+    /*end back to top responsive*/
 }
