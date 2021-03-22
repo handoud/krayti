@@ -1,0 +1,386 @@
+/*colors*/
+
+:root {
+    --main: #2460A7FF;
+    --hover: rgb(33, 86, 150);
+    --logo: #B3C7D6FF;
+    --header: #F1F4FFFF;
+    --logout: #FF4F58FF;
+    /*colors*/
+    --silver: #A2A2A1FF;
+    --sugar: #F1F4FFFF;
+    --deepblue: #2460A7FF;
+    --sky: #85B3D1FF;
+    --babyblue: #B3C7D6FF;
+    --coffe: #D9B48FFF;
+    --DelphiniumBlue: #669DB3FF;
+    --atmosphere: #A89C94FF;
+    --fierycoral: #FF4F58FF;
+}
+
+
+/*End colors*/
+
+
+/*    Guide for me bech ken nsit XD
+navbar line : 44/132
+post slider line:  136/
+*/
+
+
+/*font-family: 'Lora', serif; 
+for the darkmode put isolation:isolate; to avoide decoration of element*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #F1F4FFFF;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    padding: .6rem 1rem;
+    background: var(--main);
+    color: var(--sugar);
+    border: 1px solid transparent;
+    isolation: isolate;
+}
+
+.btn:hover {
+    padding: .6rem 1rem;
+    background: var(--hover);
+    color: var(--sugar);
+    border: 1px solid transparent;
+    isolation: isolate;
+    transition: 0.4s;
+}
+
+
+/*navbar*/
+
+header {
+    isolation: isolate;
+    background: var(--main);
+    height: 66px;
+}
+
+header * {
+    color: var(--sugar);
+    font-weight: bold;
+}
+
+header .logo {
+    float: left;
+    margin-left: 2rem;
+    height: inherit;
+}
+
+header .logo-text {
+    margin: 8px;
+    font-family: 'Candal', sans-serif;
+}
+
+header .logo-text span {
+    color: var(--logo);
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    font-family: 'Lora', serif;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+    z-index: 5;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: whitesmoke;
+    color: #444;
+}
+
+header ul li ul li a.logout {
+    color: var(--logout);
+    z-index: 5;
+}
+
+header ul li ul li a:hover {
+    background: rgb(179, 179, 179);
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header ul li a:hover {
+    background: var(--hover);
+    transition: 0.5s;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+
+/*End navbar*/
+
+
+/*post slider*/
+
+.post-slider {
+    z-index: 2;
+}
+
+.post-slider .slider-title {
+    text-align: center;
+    margin: 30px auto;
+    font-family: 'Candal', sans-serif;
+    color: var(--silver);
+}
+
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2rem;
+    color: var(--main);
+    cursor: pointer;
+}
+
+.post-slider .next {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    font-size: 2rem;
+    color: var(--main);
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post {
+    background: var(--sugar);
+    display: inline-block;
+    width: 300px;
+    height: 330px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem var(--silver);
+    z-index: 2;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.post-slider .post-wrapper .post .post-info {
+    height: 130px;
+    padding: 0px 5px;
+}
+
+.post-slider .post-wrapper .post .post-info a,
+p {
+    font-family: 'Candal', sans-serif;
+}
+
+.page-wrapper a:hover {
+    color: var(--main);
+    transition: 0.4s;
+}
+
+
+/*end post slider*/
+
+
+/*content*/
+
+.content {
+    width: 90%;
+    margin: 30px auto 30px;
+    font-family: 'Candal', sans-serif;
+}
+
+.content h2 :hover {
+    color: var(--main);
+    transition: 0.4s;
+}
+
+.recent-post-title {
+    color: var(--silver);
+    margin: 20px;
+}
+
+.content .main-content {
+    width: 70%;
+    float: left;
+}
+
+.content .main-content .post {
+    width: 95%;
+    height: 270px;
+    margin: 25px auto;
+    border-radius: 4px;
+    background: var(--sugar);
+    position: relative;
+}
+
+.content .main-content .post .read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid var(--main);
+    background: var(--sugar);
+    color: inherit;
+    isolation: isolate;
+}
+
+.content .main-content .post .read-more:hover {
+    border: 1px solid transparent;
+    isolation: isolate;
+    border: none;
+    background: var(--main);
+    color: var(--sugar);
+    transition: 0.4s;
+}
+
+.content .main-content .post img {
+    width: 40%;
+    height: 100%;
+    float: left;
+    object-fit: cover;
+}
+
+.content .main-content .post .post-preview {
+    padding: 10px;
+    width: 60%;
+    float: right;
+}
+
+.sidebar {
+    width: 30%;
+    float: left;
+    border: 1px solid blue;
+    height: 300px;
+}
+
+
+/*end content*/
+
+
+/*media queries*/
+
+@media only screen and (max-width: 750px) {
+    header {
+        position: relative;
+        z-index: 5;
+    }
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 17px;
+        font-size: 1.9rem;
+    }
+    header .logo {
+        margin-left: .4rem;
+        font-size: 14px;
+    }
+    header .logo-text {
+        margin: 12px;
+        font-family: 'Candal', sans-serif;
+    }
+    header .logo-text span {
+        color: var(--logo);
+    }
+    header ul li {
+        width: 100%;
+    }
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+        padding: left 50px;
+    }
+    header ul li ul li a {
+        color: var(--header);
+        background: var(--main);
+    }
+    header ul li ul li a:hover {
+        background: var(--hover);
+        transition: 0.4s;
+    }
+    header ul {
+        max-height: 0px;
+        width: 100%;
+        background: var(--main);
+        overflow: hidden;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .showing {
+        max-height: 100em;
+        clip-path: circle(1100px at 90% -10%);
+        -webkit-clip-path: circle(1100px at 90% -10%);
+        pointer-events: all;
+    }
+    /*End navbar*/
+}
