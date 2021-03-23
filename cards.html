@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/cards.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!--card by vanilla js-->
+    <div class="card-container">
+        <div class="card">
+            <div class="card-content">
+                <h2>1</h2>
+                <h3>card one</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nesciunt earum, nisi fuga dolorum aspernatur non at pariatur minima beatae dolores odit voluptas reiciendis quas, officia voluptatibus quae libero accusantium.</p>
+                <a href="#">read more</a>
+            </div>
+        </div>
+    </div>
+    <!--end card by vanilla-->
+    <!--vanilla card js script-->
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+    <!--end vanilla card js script-->
+</body>
+
+
+</html>
