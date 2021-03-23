@@ -338,13 +338,21 @@ p {
     border-radius: 50%;
     right: 15px;
     bottom: 15px;
-    transition: background 0.5s;
+    transition: 0.5s;
     z-index: 11;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 .back-to-top i {
-    padding-top: 12px;
-    color: #fff;
+    color: var(--sugar);
+    z-index: 12;
+    margin-top: 12px;
 }
 
 
@@ -420,8 +428,10 @@ p {
         font-size: 12px;
     }
     .back-to-top i {
-        padding-top: 10px;
+        margin-top: 10px;
         color: #fff;
     }
     /*end back to top responsive*/
+    /*content responsive*/
+    /*end content responsive*/
 }

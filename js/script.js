@@ -79,3 +79,4 @@ $('.post-wrapper').slick({
     ]
 });
 //end slick
+//backtotop button
