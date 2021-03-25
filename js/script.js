@@ -10,7 +10,7 @@
 
 //navbar
 $(document).ready(function() {
-    $('.menu-toggle').on('click', function() {
+    $('.toggle').on('click', function() {
         $('.nav').toggleClass('showing');
         $('.nav ul').toggleClass('showing');
 

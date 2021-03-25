@@ -366,12 +366,66 @@ p {
         position: relative;
         z-index: 5;
     }
-    header .menu-toggle {
-        display: block;
+    header .toggle {
         position: absolute;
+        width: 66px;
+        height: 66px;
+        cursor: pointer;
+        transition: 0.5s;
+        background: #2460A7FF;
+        right: 0px;
+    }
+    .toggle span {
+        width: 50%;
+        height: 4px;
+        position: absolute;
+        transition: 0.5s;
+        background: #F1F4FFFF;
+        transform: translateX(-50%);
+    }
+    .toggle span:nth-child(1) {
+        top: 30%;
+        left: 50%;
+    }
+    .toggle span:nth-child(2) {
+        bottom: 30%;
+        left: 50%;
+    }
+    .toggle.active span {
+        background: #2460A7FF;
+    }
+    .toggle.active span:nth-child(1) {
+        top: 45%;
+        left: 50%;
+        width: 60%;
+    }
+    .toggle.active span:nth-child(2) {
+        bottom: 50%;
+        left: 50%;
+        width: 60%;
+    }
+    .toggle.active span:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(135deg);
+    }
+    .toggle.active span:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(215deg);
+    }
+    .toggle::before {
+        position: absolute;
+        width: 50%;
+        height: 4px;
+        content: "";
         right: 20px;
         top: 17px;
-        font-size: 1.9rem;
+        transform: translate(-50%, -50%);
+        background: #F1F4FFFF;
+        transition: 0.5s;
+        top: 50%;
+        left: 50%;
+    }
+    .toggle.active:before {
+        width: 100%;
+        height: 100%;
     }
     header .logo {
         margin-left: .4rem;
