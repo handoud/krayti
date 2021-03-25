@@ -33,6 +33,7 @@ for the darkmode put isolation:isolate; to avoide decoration of element*/
 
 * {
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -76,6 +77,19 @@ a {
     border: 1px solid transparent;
     isolation: isolate;
     transition: 0.4s;
+}
+
+.text-input {
+    padding: .7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    color: var(--silver);
+    line-height: 1.5rem;
+    font-family: "lora", serif;
+    border: 1px solid var(--silver);
+    font-size: 1.2em;
 }
 
 
@@ -313,13 +327,6 @@ p {
     float: right;
 }
 
-.sidebar {
-    width: 30%;
-    float: left;
-    border: 1px solid blue;
-    height: 300px;
-}
-
 
 /*end content*/
 
@@ -357,6 +364,53 @@ p {
 
 
 /*end back to top icon */
+
+
+/* asdide*/
+
+.content .sidebar {
+    width: 30%;
+    float: left;
+    height: 300px;
+}
+
+.content .sidebar .section {
+    background: var(--sugar);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.content .sidebar .section.search {
+    margin-top: 85px;
+}
+
+.content .sidebar .section.topics ul {
+    margin: 0px;
+    padding: 0px;
+    border-top: 1px solid var(--silver);
+}
+
+.content .sidebar .section.topics ul li a {
+    border-bottom: 1px solid var(--silver);
+    display: block;
+    padding: 15px 0px 15px 0px;
+    transition: all 0.3s;
+}
+
+.content .sidebar .section.topics ul li a:hover {
+    padding-left: 10px;
+    transition: all 0.3s;
+    color: var(--main);
+}
+
+.content .sidebar .section .section-title {
+    margin: 10px 0px 10px 0px;
+    color: var(--silver);
+}
+
+
+/* end od aside*/
 
 
 /*media queries*/
@@ -488,4 +542,48 @@ p {
     /*end back to top responsive*/
     /*content responsive*/
     /*end content responsive*/
+}
+
+@media only screen and (max-width:934px) {
+    .content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .content .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .content .main-content .post {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .content .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+    .content .sidebar .section.search {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .content .main-content .post {
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .content .main-content .post img {
+        width: 100%;
+    }
+    .content .main-content .post .post-preview {
+        width: 100%;
+    }
+    .content .main-content .post .read-more {
+        position: static;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
 }
