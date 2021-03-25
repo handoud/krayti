@@ -569,6 +569,11 @@ p {
 }
 
 @media only screen and (max-width:600px) {
+       .content .main-content {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .content .main-content .post {
         height: auto;
         margin-left: 20px;
