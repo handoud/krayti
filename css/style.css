@@ -571,7 +571,7 @@ p {
 @media only screen and (max-width:600px) {
        .content .main-content {
         width: 100%;
-        padding-left: 30px;
+       
         padding-right: 30px;
     }
     .content .main-content .post {
