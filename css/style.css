@@ -335,7 +335,7 @@ p {
 }
 
 
-/* end od aside*/
+/* end of aside*/
 
 
 /*media queries*/
@@ -376,6 +376,8 @@ p {
         color: var(--sugar);
         opacity: 1;
     }
+    /*search icon*/
+    /*endsearch icon */
     /*end moble list */
     /*End navbar*/
     /*content responsive*/

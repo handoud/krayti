@@ -54,7 +54,7 @@
             <a onclick="scrollToTop()"><i class="fa fa-home"></i></a>
         </li>
         <li>
-            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#sidebar"><i class="fa fa-search"></i></a>
         </li>
         <li>
             <a href="#"><i class="fa fa-user"></i></a>
@@ -203,7 +203,8 @@
         <!--end main content-->
 
         <!--aside -->
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
+
             <div class="section search">
                 <h2 class="section-title">Search</h2>
                 <form action="index.html" method="POST">
@@ -246,27 +247,16 @@
     <!--backto top icon-->
     <div class="back-to-top" onclick="scrollToTop()"> <i class="fa fa-chevron-up "></i>
     </div>
-    <script type="text/javascript">
-        window.addEventListener('scroll', function() {
-            var scroll = document.querySelector('.back-to-top ');
-            scroll.classList.toggle("active", window.scrollY > 500)
-        })
-
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            })
-        }
-    </script>
-
     <!--end backto top icon-->
+    <!--toggle animation script-->
     <script type="text/javascript">
         function add_class() {
             var element = document.getElementById("toggle");
             element.classList.toggle("active")
         }
     </script>
+    <!-- endtoggle animation script-->
+
     <!--JQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
     <!--slick coursel-->

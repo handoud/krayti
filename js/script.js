@@ -15,11 +15,7 @@ $(document).ready(function() {
         $('.nav ul').toggleClass('showing');
 
     });
-    $('.logo').on('click', function() {
-        $('.nav').toggleClass('showing');
-        $('.nav ul').toggleClass('showing');
 
-    });
 
 });
 //end navbar
@@ -85,3 +81,18 @@ $('.post-wrapper').slick({
 });
 //end slick
 //backtotop button
+window.addEventListener('scroll', function() {
+    var scroll = document.querySelector('.back-to-top ');
+    scroll.classList.toggle("active", window.scrollY > 500)
+
+
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+};
+//end back to top button
+//search button
