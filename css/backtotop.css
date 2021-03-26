@@ -1,0 +1,50 @@
+/*back to top icon*/
+
+.back-to-top {
+    position: fixed;
+    background: var(--main);
+    color: var(--sugar);
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: 0.5s;
+    z-index: 11;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top i {
+    color: var(--sugar);
+    z-index: 12;
+    margin-top: 12px;
+}
+
+
+/*end back to top icon */
+
+@media only screen and (max-width:800px) {
+    /*back to top button*/
+    .back-to-top {
+        width: 30px;
+        height: 30px;
+        bottom: 15px;
+        text-align: center;
+        line-height: 1;
+        font-size: 12px;
+    }
+    .back-to-top i {
+        margin-top: 10px;
+        color: #fff;
+    }
+    /*end back to top responsive*/
+}

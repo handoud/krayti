@@ -15,6 +15,11 @@ $(document).ready(function() {
         $('.nav ul').toggleClass('showing');
 
     });
+    $('.logo').on('click', function() {
+        $('.nav').toggleClass('showing');
+        $('.nav ul').toggleClass('showing');
+
+    });
 
 });
 //end navbar
