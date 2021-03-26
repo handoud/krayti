@@ -416,7 +416,7 @@ p {
 @media only screen and (max-width:600px) {
     .content .main-content {
         width: 100%;
-        padding-right: 50px;
+        align-items: center;
     }
     .content .main-content .post {
         height: auto;
