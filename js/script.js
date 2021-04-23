@@ -95,4 +95,8 @@ function scrollToTop() {
     })
 };
 //end back to top button
-//search button
+//loader
+setTimeout(function() {
+    $('.loadercontainer').fadeToggle();
+}, 1500);
+//end loader
