@@ -282,6 +282,7 @@ p {
     object-fit: cover;
     transform: translateX(-2rem);
     margin-top: 25px;
+    border-radius: 2px;
 }
 
 .content .main-content .post .post-preview {
