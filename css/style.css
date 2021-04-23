@@ -277,9 +277,11 @@ p {
 
 .content .main-content .post img {
     width: 40%;
-    height: 100%;
+    height: 80%;
     float: left;
     object-fit: cover;
+    transform: translateX(-2rem);
+    margin-top: 25px;
 }
 
 .content .main-content .post .post-preview {
@@ -394,7 +396,7 @@ p {
 
 @media only screen and (max-width:934px) {
     .content {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -404,7 +406,7 @@ p {
         padding: 10px;
     }
     .content .main-content .post {
-        width: 100%;
+        width: 90%;
         margin: 20px auto;
     }
     .content .sidebar {
@@ -423,9 +425,14 @@ p {
     }
     .content .main-content .post {
         height: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .content .main-content .post img {
-        width: 100%;
+        width: 80%;
+        height: 40%;
+        transform: translateY(-3rem);
+        margin-left: 2.5rem;
     }
     .content .main-content .post .post-preview {
         width: 100%;
