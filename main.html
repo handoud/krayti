@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Krayti</title>
+    <!--font awesom-->
+    <script src="https://kit.fontawesome.com/2f7760bf9a.js" crossorigin="anonymous"></script>
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--loader-->
+    <div class="loadercontainer">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--end loader-->
+
+    <!--navbar-->
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>Krayti</span>-قرايتي</h1>
+        </div>
+        <div class="toggle" id="toggle" onClick="add_class()">
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about </a></li>
+            <li><a href="#">services</a></li>
+            <!-- <li><a href="#">SiGN-UP</a></li>-->
+
+            <li>
+                <a href="#">
+                    <i class="far fa-user"></i> ADMIN
+                    <i class="fa fa-chevron-down" style="font-size: .8rem;"></i> </a>
+
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" class="logout">Logout</a></li>
+
+                </ul>
+            </li>
+
+        </ul>
+
+    </header>
+    <!--End navbar-->
+    <!--bar for mobile-->
+    <ul class="mobile-list">
+        <li>
+            <a onclick="scrollToTop()"><i class="fa fa-home"></i></a>
+        </li>
+        <li>
+            <a href="#sidebar"><i class="fa fa-search"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-user"></i></a>
+        </li>
+    </ul>
+    <!--end bar for mobile-->
+
+
+
+
+
+
+    <!--page wrapper -->
+    <div class="page-wrapper">
+
+        <!--post slider-->
+        <div class="post-slider">
+            <h1 class="slider-title">Trending</h1>
+            <i class="fa fa-chevron-left prev"></i>
+            <i class="fa fa-chevron-right next"></i>
+
+            <div class="post-wrapper">
+                <!--post-->
+                <div class="post">
+                    <img class='slider-image' src="images/main.jpg" alt="">
+                    <div class="post-info">
+                        <h4><a href="#">title1</a></h4>
+                        <i class="far fa-user">Mouhanned Ben Lazreg</i>&nbsp;<i class="far fa-calendar">22/03/2021</i>
+                    </div>
+                </div>
+                <!--End post-->
+                <!--post-->
+                <div class="post">
+                    <img class='slider-image' src="images/main.jpg" alt="">
+                    <div class="post-info">
+                        <h4><a href="#">title2</a></h4>
+                        <i class="far fa-user">Mouhanned Ben Lazreg</i>&nbsp;<i class="far fa-calendar">22/03/2021</i>
+                    </div>
+                </div>
+                <!--End post-->
+                <!--post-->
+                <div class="post">
+                    <img class='slider-image' src="images/main.jpg" alt="">
+                    <div class="post-info">
+                        <h4><a href="#">title3</a></h4>
+                        <i class="far fa-user">Mouhanned Ben Lazreg</i>&nbsp;<i class="far fa-calendar">22/03/2021</i>
+                    </div>
+                </div>
+                <!--End post-->
+                <!--post-->
+                <div class="post">
+                    <img class='slider-image' src="images/main.jpg" alt="">
+                    <div class="post-info">
+                        <h4><a href="#">title4</a></h4>
+                        <i class="far fa-user">Mouhanned Ben Lazreg</i>&nbsp;<i class="far fa-calendar">22/03/2021</i>
+                    </div>
+                </div>
+                <!--End post-->
+                <!--post-->
+                <div class="post">
+                    <img class='slider-image' src="images/main.jpg" alt="">
+                    <div class="post-info">
+                        <h4><a href="#">title5</a></h4>
+                        <i class="far fa-user">Mouhanned Ben Lazreg</i>&nbsp;<i class="far fa-calendar">22/03/2021</i>
+                    </div>
+                </div>
+                <!--End post-->
+                <!--post-->
+                <div class="post">
+                    <img class='slider-image' src="images/main.jpg" alt="">
+                    <div class="post-info">
+                        <h4><a href="#">title6</a></h4>
+                        <i class="far fa-user">Mouhanned Ben Lazreg</i>&nbsp;<i class="far fa-calendar">22/03/2021</i>
+                    </div>
+                </div>
+                <!--End post-->
+
+
+            </div>
+
+
+        </div>
+        <!--end post slider-->
+
+
+    </div>
+    <!--end page wrapper-->
+
+
+
+
+
+
+
+    <!--content-->
+    <div class="content clearfix">
+        <!--main content-->
+        <div class="main-content">
+            <h1 class="recent-post-title">Resents Posts</h1>
+            <!--post-->
+            <div class="post clearfix">
+                <img src="images/main.jpg" alt="">
+                <div class="post-preview">
+                    <h2><a href="single.html">hello world:)!!</a></h2>
+                    <i class="far fa-user">mouhanned ben lazreg </i>&nbsp;<i class="far fa-calendar">22/03/2021</i>
+                    <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus id impedit excepturi numquam, eligendi molestias repudiandae corrupti sed quidem assumenda expedita nisi. Magnam dolorum adipisci, quod eius odit ipsum dicta!</p>
+                    <a href="cards.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+            <!--end post-->
+            <!--post-->
+            <div class="post clearfix">
+                <img src="images/main.jpg" alt="">
+                <div class="post-preview">
+                    <h2><a href="single.html">hello world:)!!2</a></h2>
+                    <i class="far fa-user">mouhanned ben lazreg </i>&nbsp;<i class="far fa-calendar">22/03/2021</i>
+                    <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus id impedit excepturi numquam, eligendi molestias repudiandae corrupti sed quidem assumenda expedita nisi. Magnam dolorum adipisci, quod eius odit ipsum dicta!</p>
+                    <a href="cards.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+            <!--end post-->
+            <!--post-->
+            <div class="post clearfix">
+                <img src="images/main.jpg" alt="">
+                <div class="post-preview">
+                    <h2><a href="single.html">hello world:)!!3</a></h2>
+                    <i class="far fa-user">mouhanned ben lazreg </i>&nbsp;<i class="far fa-calendar">22/03/2021</i>
+                    <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus id impedit excepturi numquam, eligendi molestias repudiandae corrupti sed quidem assumenda expedita nisi. Magnam dolorum adipisci, quod eius odit ipsum dicta!</p>
+                    <a href="cards.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+            <!--end post-->
+            <!--post-->
+            <div class="post clearfix">
+                <img src="images/main.jpg" alt="">
+                <div class="post-preview">
+                    <h2><a href="single.html">hello world:)!!4</a></h2>
+                    <i class="far fa-user">mouhanned ben lazreg </i>&nbsp;<i class="far fa-calendar">22/03/2021</i>
+                    <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus id impedit excepturi numquam, eligendi molestias repudiandae corrupti sed quidem assumenda expedita nisi. Magnam dolorum adipisci, quod eius odit ipsum dicta!</p>
+                    <a href="cards.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+            <!--end post-->
+
+        </div>
+        <!--end main content-->
+
+        <!--aside -->
+        <div class="sidebar" id="sidebar">
+
+            <div class="section search">
+                <h2 class="section-title">Search</h2>
+                <form action="index.html" method="POST">
+                    <input type="text" name="search-term" class="text-input" placeholder="Search">
+                </form>
+            </div>
+
+
+            <div class="section topics">
+                <h2 class="section-title">topics</h2>
+                <ul>
+                    <li><a href="#">hello1</a></li>
+                    <li><a href="#">hello2</a></li>
+                    <li><a href="#">hello3</a></li>
+                    <li><a href="#">hello4</a></li>
+                    <li><a href="#">hello5</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <!--end of aside-->
+
+
+
+
+    </div>
+    <!--end content-->
+
+
+
+
+
+
+
+
+
+
+
+    <!--backto top icon-->
+    <div class="back-to-top" onclick="scrollToTop()"> <i class="fa fa-chevron-up "></i>
+    </div>
+    <!--end backto top icon-->
+    <!--toggle animation script-->
+    <script type="text/javascript">
+        function add_class() {
+            var element = document.getElementById("toggle");
+            element.classList.toggle("active")
+        }
+    </script>
+    <!-- endtoggle animation script-->
+    <!--loaderjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/loader.js"></script>
+    <!--end loaderjs-->
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+    <!--slick coursel-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--darkmode.js-->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <!--costum script-->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -28,33 +28,43 @@
 
         <div class="auth-content">
             <div class="form">
-                <form action="index.html" method="post">
+                <form action="register.html" method="post">
                     <div class="form-title">
                         <div class="logo">
                             <h1 class="logo-text"><span>Krayti</span>-قرايتي</h1>
                         </div>
                     </div>
+                    <div class='name'>
 
-                    <div>
+                        <input type="text" name="name" class="text-input n" placeholder="Name">
 
-                        <input type="email" name="email" class="text-input" placeholder="email">
+
+                        <input type="text" name="Lname" class="text-input ln" placeholder="LastName">
                     </div>
                     <div>
 
-                        <input type="password" name="password" class="text-input" placeholder="Password">
+                        <input type="text" name="username" class="text-input " placeholder="Username ">
                     </div>
+                    <div>
 
-                    <button type="submit" class="btn btn-big logbtn" name="login-btn">Connect</button>
-                    <br>
-                    <br>
+                        <input type="email " name="email " class="text-input " placeholder="email ">
+                    </div>
+                    <div>
 
-                    <p> <a href="#" class="forgot">forgot your password?</a></p>
+                        <input type="password " name="password " class="text-input " placeholder="Password ">
+                    </div>
+                    <div>
+
+                        <input type="password " name="passwordConf " class="text-input " placeholder="Password verification ">
+                    </div>
+                    <button type="submit " class="btn btn-big logbtn " name="register-btn ">Sign up</button>
+
                 </form>
             </div>
 
             <div class="register">
                 <center>
-                    <p>You do not have an account ? <a href="register.html">Sign up</a></p>
+                    <p>You have an account ? <a href="index.html">Log in</a></p>
                 </center>
             </div>
         </div>

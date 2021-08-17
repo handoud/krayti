@@ -342,6 +342,102 @@ p {
 /* end of aside*/
 
 
+/*auth conntent*/
+
+.logo-text {
+    margin: 8px;
+    font-family: 'Candal', sans-serif;
+}
+
+.logo-text span {
+    color: var(--main);
+}
+
+.log {
+    display: flex;
+    flex-direction: row;
+}
+
+.auth-content {
+    width: 30%;
+    margin: 50px auto;
+    margin-top: 100px;
+}
+
+.form {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    border: solid 1px grey;
+}
+
+.register {
+    margin-top: 10px;
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    border: solid 1px grey
+}
+
+.register a {
+    color: blue;
+}
+
+.logbtn {
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.auth-content .form-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-content form div {
+    margin-bottom: 10px;
+}
+
+.auth-content form p {
+    text-align: center;
+}
+
+.auth-content form p .log {
+    text-decoration: underline;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+}
+
+.n {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.ln {
+    width: 50%;
+}
+
+
+/* end auth content */
+
+
+/*log in */
+
+.forgot {
+    text-decoration: none;
+    color: blue;
+}
+
+
+/*end login*/
+
+
 /*media queries*/
 
 @media only screen and (max-width: 750px) {
@@ -380,6 +476,11 @@ p {
         color: var(--sugar);
         opacity: 1;
     }
+    .auth-content {
+        width: 70%;
+        margin: 20px auto;
+        background-color: white;
+    }
     /*search icon*/
     /*endsearch icon */
     /*end moble list */
@@ -395,9 +496,21 @@ p {
     /*end search for mobile */
 }
 
+@media only screen and (max-width:1300px) {
+    .device {
+        display: none;
+    }
+}
+
 @media only screen and (max-width:934px) {
     .content {
         width: 90%;
+    }
+    .auth-content {
+        width: 40%;
+    }
+    .device {
+        display: none;
     }
 }
 
@@ -416,6 +529,9 @@ p {
     }
     .content .sidebar .section.search {
         margin-top: 30px;
+    }
+    .auth-content {
+        width: 50%;
     }
 }
 
@@ -443,5 +559,8 @@ p {
         width: 100%;
         display: block;
         text-align: center;
+    }
+    .auth-content {
+        width: 50%;
     }
 }
