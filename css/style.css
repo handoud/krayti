@@ -478,7 +478,7 @@ p {
     }
     .auth-content {
         width: 80%;
-        padding: 10px;
+        margin: 20px auto;
     }
     /*search icon*/
     /*endsearch icon */
@@ -531,7 +531,7 @@ p {
     }
     .auth-content {
         width: 80%;
-        padding: 10px;
+        margin: 20px auto;
     }
 }
 
@@ -562,6 +562,6 @@ p {
     }
     .auth-content {
         width: 80%;
-        padding: 10px;
+        margin: 20px auto;
     }
 }
