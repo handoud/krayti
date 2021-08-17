@@ -477,8 +477,8 @@ p {
         opacity: 1;
     }
     .auth-content {
-        width: 70%;
-        margin: 20px auto;
+        width: 80%;
+        padding: 10px;
         background-color: white;
     }
     /*search icon*/
@@ -531,7 +531,8 @@ p {
         margin-top: 30px;
     }
     .auth-content {
-        width: 50%;
+        width: 80%;
+        padding: 10px;
     }
 }
 
@@ -561,6 +562,7 @@ p {
         text-align: center;
     }
     .auth-content {
-        width: 50%;
+        width: 80%;
+        padding: 10px;
     }
 }
