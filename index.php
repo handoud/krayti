@@ -17,7 +17,8 @@
     <div class="log">
         <div class="device device-imac-pro">
             <div class="device-frame">
-                <img class="device-content" src="src/img/bg-08.jpg">
+                <img class="device-content" src="images/geek.jpg">
+
             </div>
             <div class="device-stripe"></div>
             <div class="device-header"></div>
